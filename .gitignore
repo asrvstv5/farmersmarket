@@ -1,3 +1,4 @@
 *.pyc
 .DS_Store
 API_KEY.py
+*.ipynb
