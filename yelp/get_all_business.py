@@ -50,7 +50,6 @@ def get_all_bizid(file):
     name = set()
     with open(file) as f:
         for line in f:
-            print(line.rstrip())
             query={"term":QUERY_TERM, "location":line.rstrip()}
             resp = _bizid_request(query)
             _add_business(resp, res, name)
