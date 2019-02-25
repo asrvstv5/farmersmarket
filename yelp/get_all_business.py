@@ -32,7 +32,8 @@ def _check_open(biz):
 
 def _add_business(resp, s, name):
     """
-
+    Parses HTTP response and appends all releavent business and its
+    alias to 's' and 'name'
     """
     if 'businesses' in resp:
         for biz in resp['businesses']:
